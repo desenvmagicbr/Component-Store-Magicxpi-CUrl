@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddOnAdaptorSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DefaultInterface>1</DefaultInterface>
+  <Name>CUrl</Name>
+  <Id>1021271904</Id>
+  <Description>HTTP web requested trought curl command</Description>
+  <Version>1.2</Version>
+  <AutoIncrementVersion>true</AutoIncrementVersion>
+  <MinXpiVersion>04.5000</MinXpiVersion>
+  <Icon>curl.gif</Icon>
+  <Group>Connectors</Group>
+  <EncryptionKey>7WCn9im5</EncryptionKey>
+  <StepDefinitions>
+    <UIType>D</UIType>
+    <UIImplementationClass>com.magicbr.curl.ui</UIImplementationClass>
+    <IsDamEnvironmentClass>false</IsDamEnvironmentClass>
+    <ConfigRequiresResServ>true</ConfigRequiresResServ>
+    <RuntimeTechnologyType>2</RuntimeTechnologyType>
+    <RuntimeImplementationClass>com.magicbr.curl.runtime</RuntimeImplementationClass>
+    <RuntimeRequiresResServ>true</RuntimeRequiresResServ>
+    <DAMInterfaceSupported>false</DAMInterfaceSupported>
+    <DAMInterfaceTechnologyType>2</DAMInterfaceTechnologyType>
+    <DataMapperInterfaceSupported>false</DataMapperInterfaceSupported>
+    <MethodConfigTechnology xsi:nil="true" />
+    <DotNetMethods />
+    <JavaMethods />
+  </StepDefinitions>
+  <ResourceDefinition>
+    <RS_Type_Name>CUrl</RS_Type_Name>
+    <RS_Type_Description>HTTP web resource for curl command</RS_Type_Description>
+    <RS_HELP>
+      <HelpID>1</HelpID>
+      <HelpName>Validate</HelpName>
+      <ClassName />
+      <Visibility>1</Visibility>
+    </RS_HELP>
+    <Property>
+      <ID>1</ID>
+      <Name>CUrl</Name>
+      <Type>A</Type>
+      <Picture>1000</Picture>
+      <ReadOnly>0</ReadOnly>
+      <Mandatory>1</Mandatory>
+      <TooltipDescription>Enter site url to invoke trought HTTP request</TooltipDescription>
+      <ValueSelectionType>EA</ValueSelectionType>
+      <LogicalNameSupport>1</LogicalNameSupport>
+      <LinkedParameterID>0</LinkedParameterID>
+      <encrypted>0</encrypted>
+      <Visibility>0</Visibility>
+      <DependentParameterID>0</DependentParameterID>
+      <DisplaySequenceID>1</DisplaySequenceID>
+    </Property>
+    <RS_Local_Agent_Compatible>false</RS_Local_Agent_Compatible>
+    <RS_Validation_Helper>true</RS_Validation_Helper>
+  </ResourceDefinition>
+  <Struct_ErrorsList>
+    <ErrorsListComp>
+      <ErrorCode>8888</ErrorCode>
+      <ErrorDescription>.Net Exception</ErrorDescription>
+    </ErrorsListComp>
+    <ErrorsListComp>
+      <ErrorCode>9999</ErrorCode>
+      <ErrorDescription>Java Exception</ErrorDescription>
+    </ErrorsListComp>
+    <ErrorsListComp>
+      <ErrorCode>56000</ErrorCode>
+      <ErrorDescription>CUrl Exception</ErrorDescription>
+      <JavaExceptionMessage>CUrl Exception</JavaExceptionMessage>
+    </ErrorsListComp>
+  </Struct_ErrorsList>
+</AddOnAdaptorSettings>
